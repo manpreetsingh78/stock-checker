@@ -25,6 +25,8 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import Select
 import time
 
+from config import BOT_TOKEN
+
 
 url = 'https://longap.com/product/longap-one/'
 
@@ -100,7 +102,7 @@ def DM_BOT():
         for i in range(100):
             await channel.send('Final Testing')
 
-    client.run('ODM5MzgwMzAyMTk5NjUyMzUy.YJIz0g.2rNP_WN8_g_HjUBP3F_2A4Xvf9g')
+    client.run(BOT_TOKEN)
 
 
 if __name__ == '__main__':
